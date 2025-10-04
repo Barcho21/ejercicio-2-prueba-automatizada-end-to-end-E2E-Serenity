@@ -1,0 +1,33 @@
+
+CONCLUSIONES DEL EJERCICIO - PRUEBA E2E CON SERENITY BDD (SAUCEDEMO)
+
+RESUMEN GENERAL:
+- Proyecto ejecutado: Serenity BDD - SauceDemo E2E
+- Fecha del reporte: 04/10/2025
+- Escenarios ejecutados: 1
+- Casos de prueba totales: 2
+- Pruebas exitosas: 1
+- Pruebas con error: 1
+- Porcentaje de éxito: 50%
+- Duración total: 27 minutos
+- Tiempo promedio por prueba: 2 segundos
+
+HALLAZGOS PRINCIPALES:
+1. El flujo de prueba end-to-end se ejecutó de forma correcta en su mayoría. El escenario principal de compra finalizó con éxito utilizando el navegador Chrome.
+2. Se identificó un error técnico durante la primera ejecución relacionado con la clase “NoClassDefFoundError”. Este inconveniente fue corregido al alinear las dependencias de Selenium y Serenity, lo que permitió la ejecución exitosa en los intentos posteriores.
+3. No se detectaron fallos funcionales en las acciones clave del proceso de compra (inicio de sesión, selección de productos y finalización del pedido). Todas las interacciones con la interfaz web fueron procesadas correctamente.
+4. El entorno de pruebas logró una cobertura automatizada total sobre el flujo funcional propuesto, sin requerir intervención manual.
+5. Los tiempos de ejecución se mantuvieron dentro de rangos óptimos, con un promedio de respuesta cercano a los 2 segundos por caso.
+
+CONCLUSIONES :
+- El flujo completo de compra en la aplicación SauceDemo fue validado exitosamente, demostrando estabilidad en la ejecución y cumplimiento de los criterios de negocio definidos.
+- La integración del framework Serenity BDD con Selenium y ChromeDriver se mantuvo estable tras la corrección de la incompatibilidad inicial, confirmando la consistencia del entorno de automatización.
+- El reporte generado por Serenity evidenció una trazabilidad completa de pasos, capturas de pantalla, tiempos de ejecución y resultados esperados, garantizando una documentación adecuada del proceso de validación.
+- No se observaron defectos funcionales en la lógica de la aplicación bajo prueba, lo que respalda la confiabilidad del flujo automatizado implementado.
+- El sistema evaluado cumple de manera satisfactoria con los objetivos de la prueba end-to-end. El flujo de compra se ejecutó correctamente, evidenciando estabilidad, precisión en las interacciones y resultados acordes a los criterios de aceptación. El entorno de automatización implementado es robusto, mantenible y adecuado para ser incorporado en procesos de validación continua dentro de un entorno de calidad de software profesional.
+
+RECOMENDACIONES:
+1. Mantener las versiones actuales del stack tecnológico (Serenity 3.7.0, Selenium 4.21.0 y JDK 21) para evitar conflictos de compatibilidad en futuras ejecuciones.
+2. Incorporar la ejecución del proyecto dentro de un pipeline CI/CD, preferiblemente en modo headless, para fortalecer la integración continua y agilizar la validación de nuevas versiones.
+3. Extender la cobertura de pruebas agregando nuevos escenarios, tales como validaciones de credenciales incorrectas, manejo de errores en checkout y pruebas negativas sobre el carrito de compras.
+4. Monitorear periódicamente las versiones del navegador Chrome y de ChromeDriver para asegurar la estabilidad del entorno de automatización.

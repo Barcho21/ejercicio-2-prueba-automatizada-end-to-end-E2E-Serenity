@@ -1,0 +1,15 @@
+com\example\saucedemo\ui\CartPage.class
+com\example\saucedemo\ui\LoginPage.class
+com\example\saucedemo\ui\CheckoutOverviewPage.class
+com\example\saucedemo\tasks\FinishPurchase.class
+com\example\saucedemo\tasks\CheckoutInformation.class
+com\example\saucedemo\ui\CheckoutInformationPage.class
+com\example\saucedemo\questions\ConfirmationMessage.class
+com\example\saucedemo\tasks\AddProductsToCart.class
+com\example\saucedemo\ui\InventoryPage.class
+com\example\saucedemo\tasks\Login.class
+com\example\saucedemo\runners\CucumberTestSuite.class
+com\example\saucedemo\tasks\OpenTheApplication.class
+com\example\saucedemo\stepdefinitions\PurchaseStepDefinitions.class
+com\example\saucedemo\tasks\GoToCart.class
+com\example\saucedemo\ui\CheckoutCompletePage.class
