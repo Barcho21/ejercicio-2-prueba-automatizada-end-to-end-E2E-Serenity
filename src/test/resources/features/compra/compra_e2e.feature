@@ -1,3 +1,4 @@
+# language: es
 Característica: Compra E2E en SauceDemo
   Como usuario final
   Quiero autenticarme y realizar una compra

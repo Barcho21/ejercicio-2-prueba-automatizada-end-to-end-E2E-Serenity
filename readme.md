@@ -116,20 +116,46 @@ ejercicio 2/
 
 ## Ejecución de las pruebas
 
-### Opción 1 – Desde IntelliJ IDEA
-1. Abrir la clase `CucumberTestSuite.java`.
-2. Hacer clic en el ícono **▶ Run 'CucumberTestSuite'**.  
-3. Chrome se abrirá automáticamente y ejecutará el flujo completo.  
-4. Al finalizar, se generará el reporte Serenity.
+### Ejecución de las pruebas y generación del reporte (desde IntelliJ IDEA)
 
-### Opción 2 – Desde la línea de comandos
-Ejecutar en la raíz del proyecto:
-```bash
-mvn clean verify
-```
-Esto compilará, ejecutará las pruebas y generará los reportes.
+1. En IntelliJ IDEA, abre el panel lateral “Maven”.  
+   (Si no está visible, presiona Alt + 8 o ve a View → Tool Windows → Maven).
 
----
+2. En el árbol del proyecto Maven, ubica:
+   ```
+   Serenity BDD - SauceDemo E2E
+      └── Lifecycle
+          ├── clean
+          ├── validate
+          ├── compile
+          ├── test
+          ├── package
+          ├── verify
+   ```
+
+3. Haz doble clic en “verify”.  
+   Esto ejecutará automáticamente:
+   - El comando `mvn clean verify`.
+   - Las pruebas automatizadas (E2E).
+   - Y generará el reporte de Serenity en la carpeta:
+     ```
+     target/site/serenity/index.html
+     ```
+
+4. Cuando la ejecución finalice y veas el mensaje `BUILD SUCCESS`, abre el reporte:
+
+   - Desde el Explorador de archivos:  
+     Navega hasta la ruta anterior y haz doble clic en `index.html`.
+   - O desde PowerShell:  
+     ```bash
+     start .\target\site\serenity\index.html
+     ```
+
+   Esto abrirá el reporte interactivo de Serenity, donde podrás visualizar:
+   - Los pasos ejecutados.  
+   - Capturas de pantalla.  
+   - Duración y resultado de cada escenario.
+
 
 ## Visualización del reporte Serenity
 
