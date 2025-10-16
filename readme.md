@@ -133,7 +133,9 @@ ejercicio 2/
           ├── verify
    ```
 
-3. Haz doble clic en “verify”.  
+3. Haz doble clic en “clean”.
+   Haz doble clic en “validate”
+   Haz doble clic en “verify”  
    Esto ejecutará automáticamente:
    - El comando `mvn clean verify`.
    - Las pruebas automatizadas (E2E).
